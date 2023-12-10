@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro di Classe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro di Classe</h1>
+        
+        <!-- Form per aggiungere uno studente -->
+        <form id="formAggiungi">
+            <label for="id">ID:</label>
+            <input type="number" id="id" required>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" required>
+            <button type="submit">Aggiungi Studente</button>
+        </form>
+        
+        <!-- Elenco degli studenti -->
+        <ul id="elencoStudenti"></ul>
+    </div>
+
+    <script src="registroClasse.js"></script>
+</body>
+</html>
