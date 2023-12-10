@@ -65,20 +65,3 @@ class RegistroClasse {
     return this.studenti.find(studente => studente.id === id);
   }
 }
-
-// Esempio di utilizzo
-const registro = new RegistroClasse();
-
-registro.aggiungiStudente(1, 'Mario', 'Rossi');
-registro.aggiungiStudente(2, 'Luigi', 'Bianchi');
-
-registro.aggiungiVoto(1, 8, '2023-01-15', 'Esame di matematica');
-registro.aggiungiVoto(1, 9, '2023-02-20', 'Compito di italiano');
-
-registro.visualizzaDatiStudente(1);
-
-registro.modificaDatiStudente(1, { cognome: 'Verdi' });
-
-registro.visualizzaDatiStudente(1);
-
-registro.rimuoviStudente(2);
